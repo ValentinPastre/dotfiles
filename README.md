@@ -1,8 +1,7 @@
 # dotfiles
-Mis dotfiles de arch linux
-
-# Necesario tener instalado GNU Stow
-# El repositorio se tiene que clonar en ~/
+* Mis dotfiles de arch linux
+* Necesario tener instalado GNU Stow
+* El repositorio se tiene que clonar en ~/
 
 # Programas a tener instalados para Hyprland
 
