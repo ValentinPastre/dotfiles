@@ -3,9 +3,10 @@
 * Necesario tener instalado GNU Stow
 * El repositorio se tiene que clonar en ~/
 
-# Programas a tener instalados para Hyprland
+# TO DO
+- Agregar colorscheme de gruvbox-material o gruvbox a hyprlock
 
-#### programas instalados ####
+# Programas a tener instalados para Hyprland
 - nmtui
 - bluetoothctl
 - hyprpolkitagent
@@ -46,5 +47,3 @@
 - spotify-player
 - wlogout
 
-
-#### programas a instalar ####
