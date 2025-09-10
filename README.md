@@ -44,6 +44,7 @@
 - gvfs
 - gvfs-mtp
 - spotify-player
+- wlogout
 
 
 #### programas a instalar ####
