@@ -1,3 +1,4 @@
+@theme "/usr/share/rofi/themes/gruvbox-dark.rasi"
 configuration {
 /*	modes: "window,drun,run,ssh";*/
 	font: "Roboto Mono Nerd Font 16";
@@ -21,7 +22,7 @@ configuration {
 /*	run-shell-command: "{terminal} -e {cmd}";*/
 /*	window-command: "wmctrl -i -R {window}";*/
 /*	window-match-fields: "all";*/
-/*	icon-theme: ;*/
+/*	icon-theme: "gruvbox_dark";*/
 /*	drun-match-fields: "name,generic,exec,categories,keywords";*/
 /*	drun-categories: ;*/
 /*	drun-exclude-categories: ;*/
@@ -169,7 +170,7 @@ configuration {
   
 }
 
-@theme "/usr/share/rofi/themes/gruvbox-dark.rasi"
+/*@theme "/usr/share/rofi/themes/gruvbox-dark.rasi"*/
 
 window {
 	width: 30%;
@@ -179,9 +180,11 @@ window {
 
 element {
 	border-radius: 12px;
+	children: [element-icon, element-text];
 }
 
 element-text {
 	highlight: bold;
 }
+
 
