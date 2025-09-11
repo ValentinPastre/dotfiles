@@ -12,10 +12,11 @@ alias sppotify='spotify_player'
 
 #PS1='[\u@\h \W]\$ '
 PS1="\[\e[31m\][\u@\h \W]\$ \[\e[0m\]"
-# Java JDK 21
 export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
 export PATH="$JAVA_HOME/:$PATH"
-
-# Rust Cargo
 export PATH="$HOME/.cargo/bin:$PATH"
+
+#HACER sudoedit PARA EDITAR ARCHIVOS DE ROOT
+export VISUAL=nvim
+export EDITOR=nvim
 

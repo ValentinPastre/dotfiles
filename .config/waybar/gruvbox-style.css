@@ -20,7 +20,7 @@ tooltip {
   border-width: 0px;
   border-style: solid;
   border-color: @bg_dim;
-  opacity: 0.75;
+  opacity: 0.9;
   color: @blue;
 }
 
