@@ -7,7 +7,6 @@
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-alias snvim='sudo -E nvim'
 alias sppotify='spotify_player'
 
 #PS1='[\u@\h \W]\$ '
