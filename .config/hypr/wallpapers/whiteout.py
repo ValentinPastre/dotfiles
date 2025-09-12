@@ -35,12 +35,7 @@ def get_wallpapers():
     for filename in os.listdir(WALLPAPER_DIR):
         if any(filename.lower().endswith(ext) for ext in supported_extensions):
             wallpapers.append(os.path.join(WALLPAPER_DIR, filename))
-    return wallpapers
-
-def show_preview(image_path):
-    """Muestra la imagen en kitty usando icat."""
-    subprocess.run(["kitty", "+kitten", "icat", "--clear"])
-    subprocess.run(["kitty", "+kitten", "icat", image_path])
+    return sorted(wallpapers, key=lambda x: os.path.basename(x).lower())
 
 import curses
 
