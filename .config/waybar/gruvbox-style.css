@@ -151,6 +151,7 @@ tooltip {
 #custom-wallpaper {
   border-radius: 10px;
   margin-right: 5px;
+  color: @yellow;
 }
 
 #custom-localtime {

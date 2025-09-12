@@ -22,6 +22,7 @@
     "backlight",
     "pulseaudio",
     "pulseaudio#microphone",
+    "custom/wallpaper",
     "custom/notifications",
   ],
 
@@ -73,7 +74,8 @@
 
   "custom/wallpaper": {
     "format": " ",
-    "on-click": "kitty --title wallpaper_pack_selector /home/alchemmist/scripts/select_wallpaper_pack.sh"
+    "tooltip": false,
+    "on-click": "kitty ~/.config/hypr/wallpapers/whiteout.py"
   },
 
   "hyprland/workspaces": {

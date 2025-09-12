@@ -18,4 +18,4 @@ export PATH="$HOME/.cargo/bin:$PATH"
 #HACER sudoedit PARA EDITAR ARCHIVOS DE ROOT
 export VISUAL=nvim
 export EDITOR=nvim
-
+export PATH="$HOME/.cabal/bin:$HOME/.ghcup/bin:$PATH"
