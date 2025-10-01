@@ -15,11 +15,11 @@ window#waybar {
 }
 
 tooltip {
-  background: @bg_dim;
+  background: @bg0;
   border-radius: 5px;
   border-width: 0px;
   border-style: solid;
-  border-color: @bg_dim;
+  border-color: @bg0;
   opacity: 0.9;
   color: @blue;
 }
@@ -36,7 +36,7 @@ tooltip {
 
 #workspaces button.focused {
   color: #a6adc8;
-  background: @bg_dim;
+  background: @bg0;
   border-radius: 10px;
 }
 
@@ -74,11 +74,11 @@ tooltip {
 #tray,
 #backlight {
   color: @aqua;
-  background: @bg_dim;
+  background: @bg0;
   opacity: 0.75;
   padding: 0px 10px;
   margin-top: 5px;
-  border: 2px solid @fg0;
+  border: 0px solid @fg0;
 }
 
 #custom-lock {
@@ -180,7 +180,7 @@ tooltip {
 }
 
 #workspaces {
-  background: @bg_dim;
+  background: @bg0;
   border-radius: 10px;
   margin-left: 5px;
   padding-right: 0px;
@@ -231,7 +231,7 @@ tooltip {
   color: @aqua;
   /* color: #cba6f7; */
   border-left: 0px;
-  border-right: 2px solid @fg0;
+  border-right: 0px solid @fg0;
   margin-left: 0px;
   border-radius: 0px 10px 10px 0px;
   margin-right: 5px;
