@@ -19,3 +19,10 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export VISUAL=nvim
 export EDITOR=nvim
 export PATH="$HOME/.cabal/bin:$HOME/.ghcup/bin:$PATH"
+
+
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - bash)"
+
+source ~/.git-completion.bash
