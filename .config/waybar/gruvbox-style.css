@@ -20,7 +20,7 @@ tooltip {
   border-width: 0px;
   border-style: solid;
   border-color: @bg0;
-  opacity: 0.9;
+  opacity: 1.0;
   color: @blue;
 }
 
@@ -47,7 +47,7 @@ tooltip {
 }
 
 #workspaces button:hover {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.75);
   color: #cdd6f4;
   border-radius: 10px;
 }
@@ -75,7 +75,7 @@ tooltip {
 #backlight {
   color: @aqua;
   background: @bg0;
-  opacity: 0.75;
+  opacity: 1.0;
   padding: 0px 10px;
   margin-top: 5px;
   border: 0px solid @fg0;
