@@ -1,7 +1,7 @@
 {
   "layer": "top",
   "position": "top",
-  "mod": "overlay",
+  "mod": "dock",
   "margin-top": 5,
   "margin-right": 5,
   "margin-left": 5,
@@ -12,8 +12,7 @@
   "height": 17,
   "modules-left": [
     "custom/lock",
-    "custom/localtime",
-    "clock#date",
+    "clock",
     "hyprland/workspaces"
   ],
   "modules-center": [],
@@ -25,7 +24,6 @@
     "battery",
     "backlight",
     "pulseaudio",
-    "pulseaudio#microphone",
     "custom/wallpaper",
     "custom/notifications",
   ],
@@ -50,12 +48,6 @@
         "on-click-right": "swaync-client -d -sw",
         "escape": true
     },
-
-  "custom/localtime": {
-    "exec": "date +'%H:%M'",
-    "interval": 30,
-    "format": "{}"
-  },
 
   "custom/lock": {
     "format": "󰣇",
@@ -107,14 +99,10 @@
     "spacing": 10
   },
 
-  "clock#time": {
+  "clock": {
     "format": "{:%H:%M}",
+    "format-alt": "{:%d.%m.%Y}",
     "timezone": "America/Argentina/Cordoba",
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
-  },
-
-  "clock#date": {
-    "format": "{:%d.%m.%Y}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
   },
 

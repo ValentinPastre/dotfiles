@@ -2,7 +2,7 @@
 
 * {
   border: none;
-  border-radius: 10px;
+  border-radius: 7px;
   font-family: "RobotoMono Nerd Font";
   font-weight: bold;
   font-size: 14px;
@@ -59,7 +59,6 @@ tooltip {
 
 #custom-wallpaper,
 #clock,
-#custom-localtime,
 #window,
 #battery,
 #custom-battery-degradation,
@@ -151,15 +150,8 @@ tooltip {
 #custom-wallpaper {
   border-radius: 10px;
   margin-right: 5px;
-  color: @yellow;
-}
-
-#custom-localtime {
-  color: @red;
-  /* color: #fab387; */
-  border-radius: 10px;
-  padding: 0px 10px;
   margin-left: 5px;
+  color: @yellow;
 }
 
 #clock.date {
