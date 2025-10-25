@@ -2,14 +2,15 @@
   "layer": "top",
   "position": "top",
   "mod": "dock",
-  "margin-top": 5,
+  "margin-top": 2,
+  "margin-bottom": 0,
   "margin-right": 5,
   "margin-left": 5,
   "border-radius": 10,
   "exclusive": true,
   "passthrough": false,
   "gtk-layer-shell": true,
-  "height": 17,
+  "height": 14,
   "modules-left": [
     "custom/lock",
     "clock",
@@ -19,13 +20,12 @@
   "modules-right": [
     "memory",
     "cpu",
-    "network",
-    "bluetooth",
-    "battery",
     "backlight",
     "pulseaudio",
+    "battery",
+    "network",
+    "bluetooth",
     "custom/wallpaper",
-    "custom/notifications",
   ],
 
   "custom/notifications": {
@@ -158,19 +158,20 @@
   "network": {
     // "interface": "wlp2*", // (Optional) To force the use of this interface
     // "max-length": 350,
-    "format-wifi": "  {essid}",
+    "format-wifi": " ",
     "format-ethernet": "{ipaddr}/{cidr}",
     "format-linked": "{ifname} (No IP)",
     "format-disconnected": "Disconnected ⚠",
+    "format-disabled": "Off ⚠",
     "tooltip-format": "{essid} {signalStrength}% - {ifname}",
     "on-click": "kitty nmtui",
     // "format-alt": "{ifname}:{essid} {ipaddr}/{cidr}"
   },
 
   "bluetooth": {
-    "format-on": " {status}",
-    "format-off": " {status}",
-    "format-disabled": " dsbld", // an empty format will hide the module
+    "format-on": "",
+    "format-off": "",
+    "format-disabled": "", // an empty format will hide the module
     "format-connected": " {num_connections}",
     "tooltip-format": "{device_alias}",
     "tooltip-format-connected": " {device_enumerate}",

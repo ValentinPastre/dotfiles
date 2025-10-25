@@ -4,15 +4,14 @@
   border: none;
   border-radius: 10px;
   font-family: "RobotoMono Nerd Font";
-  font-weight: bold;
   font-size: 14px;
+  font-weight: bold;
 }
 
 window#waybar {
-  min-height: 16px;
   background: @bg0;
   background-clip: padding-box;
-  color: #cdd6f4;
+  color: @fg1;
 }
 
 tooltip {
@@ -22,7 +21,7 @@ tooltip {
   border-style: solid;
   border-color: @bg0;
   opacity: 1.0;
-  color: @blue;
+  color: @fg1;
 }
 
 #workspaces button {
@@ -32,7 +31,7 @@ tooltip {
 }
 
 #workspaces button.active {
-  color: white;
+  color: @fg1;
 }
 
 #workspaces button.focused {
@@ -70,9 +69,8 @@ tooltip {
 #custom-lock,
 #cpu,
 #memory,
-#tray,
 #backlight {
-  color: @aqua;
+  color: @fg1;
   background: @bg0;
   opacity: 1.0;
   padding: 0px 10px;
@@ -80,29 +78,29 @@ tooltip {
 }
 
 #custom-lock {
-  color: @red;
-  font-size: 17px;
-  padding-left: 8px;
-  padding-right: 13px;
-  margin-left: 8px;
-  margin-right: 0px;
+  color: @fg1;
+  font-size: 14px;
+  padding-right: 10px;
+  margin-left: 10px;
+  margin-right: 5px;
+  padding: 0px 8px;
 }
 
 #custom-notifications {
-  color: @yellow;
+  color: @fg1;
   margin-right: 8px;
-  padding-right: 13px;
-  font-size: 17px;
+  font-size: 14px;
   min-width: 17px;
+  padding: 0px 8px;
   padding-left: 0px;
 }
 
 #custom-notifications.off {
-  font-size: 17px;
+  font-size: 14px;
 }
 
 #cpu {
-  color: @orange;
+  color: @fg1;
   border-left: 0;
   min-width: 50px;
   margin-left: 0px;
@@ -111,7 +109,7 @@ tooltip {
 }
 
 #memory {
-  color: @orange;
+  color: @fg1;
   margin-right: 0px;
   margin-left: 0px;
   min-width: 50px;
@@ -119,34 +117,28 @@ tooltip {
   padding-right: 5px;
 }
 
-#custom-wallpaper {
-  padding-right: 5px;
-}
-
 #backlight {
   padding-right: 5px;
-  padding-left: 5px;
+  padding-left: 10px;
   margin-right: 0px;
+  margin-left: 10px;
 }
 
 #custom-wallpaper {
+  padding-right: 10px;
   margin-right: 5px;
   margin-left: 5px;
-  color: @yellow;
+  color: @fg1;
 }
 
 #clock.date {
-  color: @red;
+  color: @fg1;
   margin-left: 5px;
   padding: 0px 10px;
 }
 
 #backlight {
   border-right: 0px;
-}
-
-#tray {
-  margin-right: 10px;
 }
 
 #workspaces {
@@ -162,30 +154,30 @@ tooltip {
 }
 
 #clock {
-  color: @red;
+  color: @fg1;
 }
 
 #network {
-  color: @green;
+  color: @fg1;
   padding-right: 0px;
   /* color: #f9e2af; */
   /* min-width: 210px; */
   border-right: 0px;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 #bluetooth {
-  color: @green;
+  color: @fg1;
   /* color: #89b4fa; */
-  margin-right: 5px;
+  margin-right: 10px;
   border-left: 0;
 }
 
 #pulseaudio {
-  color: @aqua;
+  color: @fg1;
   padding-right: 10px;
   padding-left: 5px;
-  margin-right: 0px;
+  margin-right: 10px;
   /* color: #89b4fa; */
   border-left: 0px;
   border-right: 0px;
@@ -193,7 +185,7 @@ tooltip {
 }
 
 #pulseaudio.microphone {
-  color: @aqua;
+  color: @fg1;
   /* color: #cba6f7; */
   border-left: 0px;
   border-right: 0px solid @fg0;
@@ -202,17 +194,33 @@ tooltip {
 }
 
 #battery {
-  color: @blue;
-  padding-right: 10px;
+  color: @fg1;
+  padding-right: 5;
   margin-right: 5px;
   min-width: 50px;
 }
 
-#custom-battery-degradation {
-  margin-right: 5px;
-  min-width: 35px;
+#battery.warning {
+  color: @orange;
+}
+
+@keyframes blink {
+    to {
+        color: @fg1;
+    }
+}
+
+/* Using steps() instead of linear as a timing function to limit cpu usage */
+#battery.critical:not(.charging) {
+    background-color: @bg0;
+    color: @red;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 #battery.critical {
-  color: red;
+  color: @red;
 }
