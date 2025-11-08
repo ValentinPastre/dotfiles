@@ -12,7 +12,7 @@ alias sppotify='spotify_player'
 #PS1='[\u@\h \W]\$ '
 PS1="\[\e[31m\][\u@\h \W]\$ \[\e[0m\]"
 export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
-export PATH="$JAVA_HOME/:$PATH"
+export PATH="$JAVA_HOME/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 
 #HACER sudoedit PARA EDITAR ARCHIVOS DE ROOT
