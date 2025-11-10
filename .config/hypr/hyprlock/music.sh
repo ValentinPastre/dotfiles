@@ -14,18 +14,31 @@ get_metadata() {
 # Check for arguments
 
 # Function to determine the source and return an icon and text
+
 get_source_info() {
-	trackid=$(get_metadata "mpris:trackid")
-	if [[ "$trackid" == *"firefox"* ]]; then
-		echo -e "Firefox"
-	elif [[ "$trackid" == *"spotify"* ]]; then
-		echo -e "Spotify"
-	elif [[ "$trackid" == *"chromium"* ]]; then
-		echo -e "Chrome"
-	else
-		echo ""
+	# Buscar un player que esté reproduciendo activamente
+	player=$(playerctl --list-all | while read -r p; do
+		status=$(playerctl --player="$p" status 2>/dev/null)
+		if [[ "$status" == "Playing" ]]; then
+			echo "$p"
+			break
+		fi
+	done)
+
+	# Si no hay ninguno reproduciendo, usar el primero disponible
+	if [ -z "$player" ]; then
+		player=$(playerctl -l | head -n 1)
 	fi
+
+	case "$player" in
+		spotify) echo "Spotify" ;;
+		spotify_player) echo "Spotify" ;;
+		*firefox*) echo "Firefox" ;;
+		*chromium*) echo "Chrome" ;;
+		*) echo "" ;;
+	esac
 }
+
 
 # Parse the argument
 case "$1" in
