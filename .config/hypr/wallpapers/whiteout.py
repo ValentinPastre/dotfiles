@@ -18,11 +18,13 @@
 import os
 import subprocess
 import re
+import curses
 
 # --- Configuration ---
 WALLPAPER_DIR = os.path.expanduser("~/.config/hypr/wallpapers/")
 HYPRLAND_CONF = os.path.expanduser("~/.config/hypr/hyprland.conf")
 HYPRPAPER_CONF = os.path.expanduser("~/.config/hypr/hyprpaper.conf")
+HYPRLOCK_CONF = os.path.expanduser("~/.config/hypr/hyprlock.conf")
 
 def get_wallpapers():
     """Returns a list of wallpapers from the wallpaper directory."""
@@ -36,8 +38,6 @@ def get_wallpapers():
         if any(filename.lower().endswith(ext) for ext in supported_extensions):
             wallpapers.append(os.path.join(WALLPAPER_DIR, filename))
     return sorted(wallpapers, key=lambda x: os.path.basename(x).lower())
-
-import curses
 
 def select_wallpaper(stdscr, wallpapers):
     """Presents an interactive menu to select a wallpaper."""
@@ -142,6 +142,34 @@ def update_hyprpaper_conf(wallpaper_path):
 
     print("hyprpaper.conf updated.")
 
+def update_hyprlock_conf(wallpaper_path):
+    """Ensures hyprlock.conf updates the lock screen wallpaper."""
+    if not os.path.exists(HYPRLOCK_CONF):
+        print(f"hyprland.conf not found at: {HYPRLOCK_CONF}")
+        return
+
+    try:
+        with open(HYPRLOCK_CONF, "r") as f:
+            hyprlock_content = f.read()
+
+        pattern = r"^\s*\$background\s*=.*$"
+        replacement = f"$background = {wallpaper_path}"
+        
+        new_content, count = re.subn(pattern, replacement, hyprlock_content, flags=re.MULTILINE)
+
+        if count > 0:
+            with open(HYPRLOCK_CONF, "w") as f:
+                f.write(new_content)
+                print("hyprlock.conf successfully updated")
+        else:
+            print("variable $background not found")
+
+    except FileNotFoundError:
+        print(f"hyprlock.conf not found at: {HYPRLOCK_CONF}")
+        return
+    except Exception as e:
+        print(f"failed to update hyprlock.conf: {e}")
+
 
 def update_hyprland_conf():
     """Ensures hyprland.conf has the exec-once for hyprpaper."""
@@ -181,6 +209,7 @@ def main():
         print(f"Setting wallpaper to: {os.path.basename(selected_wallpaper)}")
         set_wallpaper(selected_wallpaper)
         update_hyprpaper_conf(selected_wallpaper)
+        update_hyprlock_conf(selected_wallpaper)
 
 
 if __name__ == "__main__":
