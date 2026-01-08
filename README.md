@@ -17,7 +17,7 @@
 - hyprpaper
 - pipewire
 - wireplumber
-- xdg-desktop-hyprland
+- xdg-desktop-portal-hyprland
 - swaync
 - nwg-look
 - waybar
