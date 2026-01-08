@@ -3,11 +3,15 @@
 * Necesario tener instalado GNU Stow
 * El repositorio se tiene que clonar en ~/
 
-# TO DO
-- Agregar colorscheme de gruvbox-material o gruvbox a hyprlock
+# importante
+- #### Archivo para docker
+    - **cp docker-images/daemon.json /etc/docker/daemon.json**
+    - Eso hace que docker descargue las imagenes en la carpeta **~/docker-images**
+- #### Archivo para tlp
+    - **cp tlp/config-01.conf /etc/tlp.d/**
+    - sobreescribe la configuracion de tlp a la mia.
 
 # Programas a tener instalados para Hyprland
-- nmtui
 - bluetoothctl
 - hyprpolkitagent
 - hyprpaper
@@ -17,10 +21,6 @@
 - swaync
 - nwg-look
 - waybar
-- pywal                 //wal -l
-                        //falta configurar para vscode
-                        //ya configurado para kitty y waybar. En kitty hay >
-
 - tlp                   //Hay que habilitar el servicio y enmascarar otros.
                         //Cualquier cosa, ver la wiki.
 
@@ -46,4 +46,29 @@
 - gvfs-mtp
 - spotify-player
 - wlogout
-
+- docker
+- postgresql
+- npm
+- obsidian
+- ruby
+- rbenv
+- pyenv
+- haskell
+- gcc
+- java
+- lisp
+- xorg-server
+- xorg-xinit
+- ttf-nerd-fonts-symbols
+- ttf-noto-nerd
+- ttf-roboto-mono-nerd
+- tree
+- timeshift
+- thermald
+- swaync
+- slack-desktop
+- otf-font-awesome
+- neovim
+- nodejs
+- networkmanager
+- mpv
