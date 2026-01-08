@@ -14,6 +14,8 @@ PS1="\[\e[31m\][\u@\h \W]\$ \[\e[0m\]"
 export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
 export PATH="$JAVA_HOME/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
 
 #HACER sudoedit PARA EDITAR ARCHIVOS DE ROOT
 export VISUAL=nvim
