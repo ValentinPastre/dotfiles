@@ -28,3 +28,9 @@
     "text" : " Suspend (Z)",
     "keybind" : "z"
 }
+{
+    "label" : "hibernate",
+    "action" : "systemctl hibernate",
+    "text" : " Hibernate (H)",
+    "keybind" : "h"
+}

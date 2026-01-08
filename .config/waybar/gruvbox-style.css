@@ -9,17 +9,17 @@
 }
 
 window#waybar {
-  background: @bg0;
+  background: @bg_dim;
   background-clip: padding-box;
   color: @fg1;
 }
 
 tooltip {
-  background: @bg0;
+  background: @bg_dim;
   border-radius: 5px;
   border-width: 0px;
   border-style: solid;
-  border-color: @bg0;
+  border-color: @bg_dim;
   opacity: 1.0;
   color: @fg1;
 }
@@ -36,7 +36,7 @@ tooltip {
 
 #workspaces button.focused {
   color: #a6adc8;
-  background: @bg0;
+  background: @bg_dim;
   border-radius: 10px;
 }
 
@@ -71,7 +71,7 @@ tooltip {
 #memory,
 #backlight {
   color: @fg1;
-  background: @bg0;
+  background: @bg_dim;
   opacity: 1.0;
   padding: 0px 10px;
   border: 0px solid @fg0;
@@ -142,7 +142,7 @@ tooltip {
 }
 
 #workspaces {
-  background: @bg0;
+  background: @bg_dim;
   margin-left: 5px;
   padding-right: 0px;
   padding-left: 5px;
@@ -212,7 +212,7 @@ tooltip {
 
 /* Using steps() instead of linear as a timing function to limit cpu usage */
 #battery.critical:not(.charging) {
-    background-color: @bg0;
+    background-color: @bg_dim;
     color: @red;
     animation-name: blink;
     animation-duration: 0.5s;
