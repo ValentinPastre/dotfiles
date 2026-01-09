@@ -21,13 +21,14 @@
 - swaync
 - nwg-look
 - waybar
-- tlp                   //Hay que habilitar el servicio y enmascarar otros.
+- **tlp**                   //Hay que habilitar el servicio y enmascarar otros.
                         //Cualquier cosa, ver la wiki.
 
-- tlp-rdw               //usar tlp-stat -s y tlp-stat -r para ver
+- **tlp-rdw**               //usar tlp-stat -s y tlp-stat -r para ver
                         //el modo que actualmente se usa y los
                         //chipsets activos (wifi, bluetooth, etc)
-- rofi-wayland
+- **tlp-pd**
+- rofi
 - hyprshot
 - hypridle
 - hyprlock
@@ -36,9 +37,8 @@
 - qt5ct
 - breezex-cursor-theme
 - brightnessctl
-- pulseaudio
-- pulseaudio-alsa
 - pipewire-alsa
+- pipewire-pulse
 - thunar
 - thunar-volman
 - thunar-archive-plugin

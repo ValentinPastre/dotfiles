@@ -1,0 +1,3 @@
+[submodule "pastre-kickstart.nvim"]
+	path = .config/nvim
+	url = git@github.com:ValentinPastre/pastre-kickstart.nvim.git
