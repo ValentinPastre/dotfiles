@@ -21,6 +21,7 @@ eval "$(rbenv init -)"
 export VISUAL=nvim
 export EDITOR=nvim
 export PATH="$HOME/.cabal/bin:$HOME/.ghcup/bin:$PATH"
+export DIFFPROG="nvim -d"
 
 
 export PYENV_ROOT="$HOME/.pyenv"
