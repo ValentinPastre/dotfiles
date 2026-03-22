@@ -1,36 +1,36 @@
 {
     "label" : "lock",
     "action" : "hyprlock",
-    "text" : "    Lock (L)    ",
+    "text" : "(L)",
     "keybind" : "l",
 }
 {
     "label" : "reboot",
     "action" : "systemctl reboot",
-    "text" : "  Reboot (R)  ",
+    "text" : "(R)",
     "keybind" : "r"
 }
 {
     "label" : "shutdown",
     "action" : "systemctl poweroff",
-    "text" : "Shutdown (S)",
+    "text" : "(S)",
     "keybind" : "s"
 }
 {
     "label" : "logout",
     "action" : "hyprctl dispatch exit 0",
-    "text" : "   Logout (E)   ",
+    "text" : "(E)",
     "keybind" : "e"
 }
 {
     "label" : "suspend",
     "action" : "systemctl sleep",
-    "text" : "  Suspend (Z) ",
+    "text" : "(Z)",
     "keybind" : "z"
 }
 {
     "label" : "hibernate",
     "action" : "systemctl hibernate",
-    "text" : "Hibernate (H)",
+    "text" : "(H)",
     "keybind" : "h"
 }
