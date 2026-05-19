@@ -1,5 +1,4 @@
 require("environment-var")
-local programs = require("programs")
 require("autostarts")
 require("keybinds")
 require("monitors")
@@ -22,7 +21,6 @@ hl.config({
 ---------------
 ---- INPUT ----
 ---------------
-
 hl.config({
 	input = {
 		kb_layout = "us",
