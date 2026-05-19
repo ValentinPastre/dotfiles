@@ -9,6 +9,7 @@ hl.config({
 hl.config({
 	master = {
 		new_status = "slave",
+		mfact = 0.5,
 	},
 })
 
