@@ -51,7 +51,7 @@
 
   "custom/lock": {
     "format": "󰣇",
-    "on-click": "wlogout -b 5",
+    "on-click": "wlogout --css ~/.config/wlogout/gruvbox-style.css -b 6 -T 325 -B 325",
     "tooltip": false
   },
 
@@ -159,13 +159,14 @@
     // "interface": "wlp2*", // (Optional) To force the use of this interface
     // "max-length": 350,
     "format-wifi": " ",
-    "format-ethernet": "{ipaddr}/{cidr}",
+    "tooltip-format-wifi": "Network: {essid} \nSignal strength: {signalStrength}% \nifname: {ifname}",
+    "format-ethernet": "🖧 ",
+    "tooltip-format-ethernet": "{ipaddr}/{cidr}",
     "format-linked": "{ifname} (No IP)",
     "format-disconnected": "Disconnected ⚠",
     "format-disabled": "Off ⚠",
     "tooltip-format": "{essid} {signalStrength}% - {ifname}",
     "on-click": "kitty nmtui",
-    // "format-alt": "{ifname}:{essid} {ipaddr}/{cidr}"
   },
 
   "bluetooth": {
