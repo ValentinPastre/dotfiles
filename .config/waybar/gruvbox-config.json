@@ -10,7 +10,7 @@
   "exclusive": true,
   "passthrough": false,
   "gtk-layer-shell": true,
-  "height": 14,
+  "height": 24,
   "modules-left": [
     "custom/lock",
     "clock",
