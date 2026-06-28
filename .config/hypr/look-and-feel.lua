@@ -6,7 +6,7 @@ hl.config({
 		border_size = 2,
 
 		col = {
-			active_border = { colors = { "rgba(ebdbb2ff)", "rgba(b8bb26ff)" }, angle = 45 }, --gruvbox
+			active_border = { colors = { "rgba(b8bb26ff)", "rgba(b8bb26ff)" }, angle = 45 }, --gruvbox
 			inactive_border = "rgba(595959aa)",
 		},
 
@@ -28,8 +28,8 @@ hl.config({
 		inactive_opacity = 1.0,
 
 		shadow = {
-			enabled = false,
-			range = 4,
+			enabled = true,
+			range = 2,
 			render_power = 3,
 			color = 0xee1a1a1a,
 		},

@@ -13,6 +13,8 @@ hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd(programs.menu))
 hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(programs.webBrowser))
 hl.bind(mainMod .. " + SHIFT + M", hl.dsp.exec_cmd(programs.music))
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen())
+hl.bind(mainMod .. " + A", hl.dsp.exec_cmd("killall -SIGUSR1 waybar"))
+
 hl.bind(mainMod .. " + PRINT", hl.dsp.exec_cmd("hyprshot -m region"))
 hl.bind(mainMod .. " + ALT + PRINT", hl.dsp.exec_cmd("hyprshot -m window"))
 hl.bind(mainMod .. " + SHIFT + PRINT", hl.dsp.exec_cmd("hyprshot -m output"))
