@@ -1,0 +1,43 @@
+# Configuración global
+font=RobotoMono Nerd Font Mono 12
+background-color=#32302f
+text-color=#ebdbb2
+border-color=#b8bb26
+border-size=2
+border-radius=0
+margin=10
+padding=10
+default-timeout=5000
+icons=1
+max-icon-size=64
+icon-path=/usr/share/icons/Gruvbox-Plus-Dark/
+
+# Posicionamiento y tamaño
+anchor=top-right
+width=400
+height=250
+
+# Formato del texto de la notificación
+format=<b>%s</b>\n%b
+
+# Agrupación de notificaciones
+group-by=app-name
+
+[hidden]
+format=
+
+# Estilo específico para notificaciones con prioridad urgente
+[urgency=critical]
+border-color=#fb4934
+default-timeout=0
+
+[app-name="PastreScriptBatteryLevelMonitor"]
+anchor=center
+width=300
+height=350
+margin=0
+padding=35
+icon-location=top
+max-icon-size=256
+text-alignment=left
+format=<span font="20"><b>%s</b></span>\n<span font="16">%b</span>
