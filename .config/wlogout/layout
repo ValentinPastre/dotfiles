@@ -6,31 +6,31 @@
 }
 {
     "label" : "reboot",
-    "action" : "systemctl reboot",
+    "action" : "loginctl reboot",
     "text" : "(R)",
     "keybind" : "r"
 }
 {
     "label" : "shutdown",
-    "action" : "systemctl poweroff",
+    "action" : "loginctl poweroff",
     "text" : "(S)",
     "keybind" : "s"
 }
 {
     "label" : "logout",
-    "action" : "hyprctl dispatch exit 0",
+    "action" : "command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'",
     "text" : "(E)",
     "keybind" : "e"
 }
 {
     "label" : "suspend",
-    "action" : "systemctl sleep",
+    "action" : "loginctl suspend",
     "text" : "(Z)",
     "keybind" : "z"
 }
 {
     "label" : "hibernate",
-    "action" : "systemctl hibernate",
+    "action" : "loginctl hibernate",
     "text" : "(H)",
     "keybind" : "h"
 }

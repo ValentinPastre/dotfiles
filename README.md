@@ -31,22 +31,24 @@
 - qt6ct
 - qt5ct
 - breezex-cursor-theme
-- spotify-player
 - wlogout
-- obsidian
 - ttf-nerd-fonts-symbols
 - ttf-noto-nerd
 - ttf-roboto-mono-nerd
-- tree
-- slack-desktop
 - otf-font-awesome
-- neovim
 - ttf-jetbrains-mono-nerd
 - kitty
 - pavucontrol
+- thunar
+- thunar-volman
+- thunar-archive-plugin
+- gvfs
+- gvfs-mtp
+- brightnessctl
 
 # Programas para el OS
 - amd-ucode
+- go
 - bluez
 - clamav
 - docker
@@ -72,12 +74,6 @@
 - rust
 - postgresql
 - npm
-- brightnessctl
-- thunar
-- thunar-volman
-- thunar-archive-plugin
-- gvfs
-- gvfs-mtp
 - **tlp**                   //Hay que habilitar el servicio y enmascarar otros.
                         //Cualquier cosa, ver la wiki.
 
@@ -99,13 +95,23 @@
     - vulkan-tools
 - solaar
 - stow
-- tailscale
-- timeshift
 - thermald
 - mpv
 - tree
-- unrar-free
-- unzip
 - wine
 - xf86-video-amdgpu
-- zip
+- 7z
+- neovim
+
+
+# programas de uso personal
+- timeshift
+- tailscale
+- spotify-player
+- obsidian
+- tree
+- slack
+- steam
+- discord
+- gamemode
+- gamescope
