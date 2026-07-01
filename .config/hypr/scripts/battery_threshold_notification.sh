@@ -5,8 +5,8 @@ BIN_PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 export WAYLAND_DISPLAY="wayland-0"
 
 BAT_DIR="/sys/class/power_supply/BAT0"
-DTHRESHOLD=70
-CTHRESHOLD=50
+DTHRESHOLD=25
+CTHRESHOLD=76
 
 STATE_FILE="/tmp/battery_monitor_state"
 LAST_STATE=$(cat "$STATE_FILE" 2>/dev/null || echo "NONE")
