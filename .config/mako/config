@@ -14,14 +14,14 @@ icon-path=/usr/share/icons/Gruvbox-Plus-Dark/
 
 # Posicionamiento y tamaño
 anchor=top-right
-width=400
+width=450
 height=250
 
 # Formato del texto de la notificación
-format=<b>%s</b>\n%b
+format=<b>%a\n%s</b>\n%b
 
 # Agrupación de notificaciones
-group-by=app-name
+group-by=none
 
 [hidden]
 format=
@@ -41,3 +41,4 @@ icon-location=top
 max-icon-size=256
 text-alignment=left
 format=<span font="20"><b>%s</b></span>\n<span font="16">%b</span>
+
