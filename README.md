@@ -19,7 +19,7 @@
 
 # Programas a tener instalados para Hyprland
 - hyprpolkitagent
-- hyprpaper
+- ~hyprpaper~ awww
 - xdg-desktop-portal-hyprland
 - nwg-look
 - waybar
