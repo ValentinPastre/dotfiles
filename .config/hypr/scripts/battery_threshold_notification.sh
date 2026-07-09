@@ -1,6 +1,8 @@
 #!/bin/bash
 
-BIN_PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+export XDG_RUNTIME_DIR="/run/user/$(id -u)"
+export DBUS_SESSION_BUS_ADDRESS="unix:path=${XDG_RUNTIME_DIR}/bus"
+export WAYLAND_DISPLAY=wayland-1
 
 BAT_DIR="/sys/class/power_supply/BAT0"
 DTHRESHOLD=25
