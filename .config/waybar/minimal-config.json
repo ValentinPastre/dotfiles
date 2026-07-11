@@ -71,7 +71,7 @@
   "custom/wallpaper": {
     "format": " ",
     "tooltip": false,
-    "on-click": "kitty ~/.config/hypr/wallpapers/whiteout.py"
+    "on-click": "~/.config/rofi/scripts/wallpaper.sh"
   },
 
   "hyprland/workspaces": {
