@@ -26,4 +26,6 @@ if [ -n "$SELECTED" ]; then
     awww img "$WALL_DIR/$SELECTED" \
         --transition-type wipe \
         --transition-duration 1
+
+    # "$HOME/.config/hypr/scripts/matugen.sh" "$WALL_DIR/$SELECTED"
 fi

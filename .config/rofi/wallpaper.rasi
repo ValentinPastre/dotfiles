@@ -84,11 +84,14 @@ listview {
     fixed-height: true;
     fixed-columns: true;
 
-    cycle: false;
+    cycle: true;
 
-    scrollbar: false;
+    scrollbar: true;
 
     spacing: 16px;
+}
+
+scrollbar {
 }
 
 /* ── Wallpaper Cards ───────────────────────── */
